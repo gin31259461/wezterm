@@ -4,7 +4,8 @@ local launch_menu = { powershell, zsh }
 
 local M = {}
 
-M.apply = function(config)
+---@param config Config
+M.setup = function(config)
   local platform = require("utils.platform").platform()
   config.launch_menu = launch_menu
 
