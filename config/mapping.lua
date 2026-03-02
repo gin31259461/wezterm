@@ -38,6 +38,9 @@ M.setup = function(config)
     { key = "+", mods = "SHIFT|CTRL", action = "IncreaseFontSize" },
     { key = "_", mods = "SHIFT|CTRL", action = "DecreaseFontSize" },
     { key = "r", mods = "SHIFT|CTRL", action = "ResetFontSize" },
+
+    { key = "Tab", mods = "CTRL", action = wezterm.action.ActivateTabRelative(1) },
+    { key = "Tab", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
   }
 end
 
