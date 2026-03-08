@@ -31,7 +31,7 @@ end
 wezterm.on("gui-startup", function(cmd)
   -- find name of display screen
   local screen
-  local screens = wezterm.gui.screens().byName
+  local screens = wezterm.gui.screens().by_name
   for name_tmp, screen_tmp in pairs(screens) do
     if name_tmp == current_screen then
       current_screen = name_tmp
