@@ -3,7 +3,7 @@ local M = {}
 
 ---@param config Config
 M.setup = function(config)
-  config.leader = { key = "a", mods = "CTRL" }
+  config.leader = { key = ";", mods = "CTRL" }
 
   -- INFO: refert to https://github.com/prabirshrestha/dotfiles/blob/main/.config/wezterm/wezterm.lua
   config.keys = {
@@ -41,6 +41,8 @@ M.setup = function(config)
 
     { key = "Tab", mods = "CTRL", action = wezterm.action.ActivateTabRelative(1) },
     { key = "Tab", mods = "SHIFT|CTRL", action = wezterm.action.ActivateTabRelative(-1) },
+
+    { key = ".", mods = "CTRL", action = wezterm.action.SendKey({ key = ".", mods = "CTRL" }) },
   }
 end
 
