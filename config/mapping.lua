@@ -3,7 +3,7 @@ local M = {}
 
 ---@param config Config
 M.setup = function(config)
-  config.leader = { key = ";", mods = "CTRL" }
+  config.leader = { key = "a", mods = "CTRL" }
 
   -- INFO: refert to https://github.com/prabirshrestha/dotfiles/blob/main/.config/wezterm/wezterm.lua
   config.keys = {
